@@ -1,5 +1,5 @@
 % IN THE NAME OF ALLAH (GOD)
-%  Written by Mahdi 2021
+%  Written by Mahdi  2021
 % this file find approximate of root of equation (moadele) 
 % with Confirmed-newton-rafson method (newton tasih shode)
 % this code run correctly on MATLAB R2020b
@@ -48,6 +48,9 @@ i = 1;
 disp('martabe tekrar ro vard konid (m). masalan 2')
 mm = input ('');
 
+disp('root ra vard konid. masalan 2^(1/2)')
+roott = input ('');
+
 fxi = feval(fx,x(1));
 fprimexi = feval(fprimex,x(1));
 x(2)=x(1) - mm*(fxi/fprimexi);
@@ -65,7 +68,7 @@ end
 disp(' ')
 answer = x(length(x));%last block of x arraye is our answer
 disp([ 'answer ~= ', num2str(answer,'%.7f'),' with ',num2str(length(x)-1) ,' repeated' ])
-
+disp('k      Xk           Ek    ')
 for j = 1:length(x)
-    disp([ 'X', num2str(j-1),'   ', num2str(x(j),'%.7f') ])
+    disp([ '', num2str(j-1),'   ', num2str(x(j),'%.7f'),'   ', num2str(abs(roott-x(j)),'%.9f') ])
 end

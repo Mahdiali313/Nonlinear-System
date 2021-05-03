@@ -1,7 +1,7 @@
 % IN THE NAME OF ALLAH (GOD)
 %  Written by Mahdi  2021
 % this file find approximate of root of equation (moadele) 
-% with Confirmed-newton-rafson method (newton tasih shode)
+% with Modified-newton-rafson method (newton tashih shode)
 % this code run correctly on MATLAB R2020b
 clear
 clc

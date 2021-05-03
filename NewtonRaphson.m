@@ -1,6 +1,6 @@
 % IN THE NAME OF ALLAH (GOD)
 %  Written by Mahdi  2021
-% this file find approximate of root of equation (moadele) with newton-rafson method
+% this file find approximate of root of equation (moadele) with newton-raphson method
 % this code run correctly on MATLAB R2020b
 clear
 clc
